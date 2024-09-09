@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<!-- saved from url=(0026)https://www.globexifi.com/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GLOBEXiFi ESL SOLUTIONS</title>
-  
+
   <!-- Bootstrap CSS -->
-  <link href="./GLOBEXiFi ESL SOLUTIONS_files/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   
   <!-- Google Fonts -->
-  <link href="./GLOBEXiFi ESL SOLUTIONS_files/css2" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
   <style>
@@ -24,42 +24,28 @@
       cursor: url('images/disco-ball-cursor.png'), auto;
     }
     .main-window {
-      background-color: rgba(255, 182, 193, 0.7); /* Light pink with 70% transparency */
+      background-color: rgba(255, 182, 193, 0.7); 
       width: 80%;
       height: auto;
       margin: auto;
       position: relative;
       top: 10%;
-      border: 3px solid #008080; /* Green */
+      border: 3px solid #008080; 
       padding: 20px;
       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     }
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 20px;
-    }
     .company-name {
-      font-size: 8rem; /* Increased size */
-      font-family: 'Honk', sans-serif;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      position: relative;
-      color: #ff69b4; /* Adjusted to match the color scheme */
+      font-size: 8rem;
+      font-family: 'Bebas Neue', cursive;
+      color: #ff69b4;
     }
     .slogan {
-      font-size: 3rem; /* Increased size */
-      color: #ffffff; /* White */
-      font-family: 'Bebas Neue', cursive;
-      margin-bottom: 20px;
+      font-size: 3rem;
+      color: #ffffff;
     }
     .icon-container {
       display: flex;
       justify-content: space-around;
-      align-items: center;
       margin-bottom: 20px;
     }
     .icon {
@@ -71,16 +57,11 @@
       align-items: center;
       color: #fffbfb;
       text-decoration: none;
-      font-family: 'Bebas Neue', cursive;
-    }
-    .icon img {
-      width: 50px;
-      height: 50px;
     }
     .popup {
       display: none;
-      background-color: rgb(255, 255, 102); /* Yellow with 0% transparency */
-      border: 3px solid #ff69b4; /* Adjusted to match the color scheme */
+      background-color: rgb(255, 255, 102);
+      border: 3px solid #ff69b4;
       padding: 20px;
       position: fixed;
       top: 50%;
@@ -98,190 +79,63 @@
       right: 10px;
       cursor: pointer;
       font-size: 1.5rem;
-      color: #ff69b4; /* Adjusted to match the color scheme */
-    }
-    .popup h2, .popup h3 {
-      font-family: 'Bebas Neue', cursive;
-    }
-    .contact-info {
-      margin-top: 20px;
-      font-size: 1.2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .contact-info a {
-      color:  rgba(255, 255, 102, 0.7); /* Pink link color */
-      text-decoration: none;
-    }
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      margin-top: 10px;
-    }
-    .social-icons a {
-      text-decoration: none;
-      color: #000;
-      margin: 10px;
-    }
-    .social-icons a img {
-      width: 50px; /* Ensure consistent size */
-      height: 50px; /* Ensure consistent size */
-      transition: transform 0.3s;
-    }
-    .social-icons a:hover img {
-      transform: scale(1.2);
-    }
-    .earth-icon {
-      width: 110px; /* Increased size */
-      height: 110px; /* Increased size */
-      margin-right: 20px;
-      animation: rotateEarth 20s linear infinite;
-    }
-    @keyframes rotateEarth {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    .qr-code-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
+      color: #ff69b4;
     }
   </style>
 </head>
 <body>
 
   <div class="main-window">
-    <div class="header">
-      <img src="./GLOBEXiFi ESL SOLUTIONS_files/8bit-earth.png" alt="8-bit Earth" class="earth-icon">
-      <div class="company-name">
-        GLOBEXiFi
-      </div>
-      <img src="./GLOBEXiFi ESL SOLUTIONS_files/ESL SOLUTIONS (2).png" alt="ESL Solutions" class="earth-icon" style="width: 140px; height: 140px;"> <!-- Updated with rotating image -->
-    </div>
+    <div class="company-name">GLOBEXiFi</div>
     <div class="slogan">Using technology and language to bring us all closer together.</div>
     <div class="icon-container">
       <a href="javascript:void(0);" class="icon" onclick="showPopup('private')">
-        <img src="./GLOBEXiFi ESL SOLUTIONS_files/private-icon.png" alt="Private Classes">
+        <img src="private-icon.png" alt="Private Classes">
         <p>Private Classes</p>
       </a>
       <a href="javascript:void(0);" class="icon" onclick="showPopup('group')">
-        <img src="./GLOBEXiFi ESL SOLUTIONS_files/group-icon.png" alt="Group Classes">
+        <img src="group-icon.png" alt="Group Classes">
         <p>Group Classes</p>
       </a>
-      <a href="javascript:void(0);" class="icon" onclick="showPopup('portfolio')">
-        <img src="./GLOBEXiFi ESL SOLUTIONS_files/portfolio-icon.png" alt="Portfolio">
-        <p>Portfolio</p>
-      </a>
-      <a href="javascript:void(0);" class="icon" onclick="showPopup('about')">
-        <img src="./GLOBEXiFi ESL SOLUTIONS_files/about-icon.png" alt="About">
-        <p>About</p>
-      </a>
-      <a href="javascript:void(0);" class="icon" onclick="showPopup('payment')">
-        <img src="./GLOBEXiFi ESL SOLUTIONS_files/payment-icon.png" alt="Payment Options">
-        <p>Payment Options</p>
-      </a>
-    </div>
-    <div class="contact-info">
-      <p>Email us at <a href="mailto:globexifi@gmail.com">globexifi@gmail.com</a></p>
-      <div class="social-icons">
-        <a href="https://www.globexifi.com/yourwhatsapplink">
-          <img src="./GLOBEXiFi ESL SOLUTIONS_files/whatsapp.png" alt="WhatsApp">
-        </a>
-        <a href="https://www.linkedin.com/in/yourlinkedinhandle">
-          <img src="./GLOBEXiFi ESL SOLUTIONS_files/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://www.facebook.com/yourfacebookpage">
-          <img src="./GLOBEXiFi ESL SOLUTIONS_files/facebook.png" alt="Facebook">
-        </a>
-        <a href="https://www.tiktok.com/@yourtiktokhandle">
-          <img src="./GLOBEXiFi ESL SOLUTIONS_files/tiktok.png" alt="TikTok">
-        </a>
-      </div>
+      <!-- Add the rest of your icons -->
     </div>
   </div>
 
+  <!-- Pop-up modals -->
   <div id="private" class="popup">
     <span class="popup-close" onclick="hidePopup('private')">×</span>
     <h2>Private Classes</h2>
-    <h3>Structured Private Lessons - $18 USD for 50 Minutes</h3>
-    <p>Ideal if you're practicing English for certain goals (such as work, university, public speaking). Our structured lessons are tailored to meet your unique needs.</p>
+    <p>Structured Private Lessons - $18 USD for 50 Minutes</p>
   </div>
-
+  
   <div id="group" class="popup">
     <span class="popup-close" onclick="hidePopup('group')">×</span>
     <h2>Group Classes</h2>
-    <h3>Speaking Club - 8 Hours for $40 USD</h3>
-    <p>Recommended for B1 levels and above. Connect with individuals from around the globe!</p>
+    <p>Speaking Club - 8 Hours for $40 USD</p>
   </div>
 
-  <div id="portfolio" class="popup">
-    <span class="popup-close" onclick="hidePopup('portfolio')">×</span>
-    <h2>Portfolio</h2>
-    <p>Get a little taste of Globexifi! These videos show examples of activities that are done in classes- with real students. </p>
-  </div>
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <div id="about" class="popup">
-    <span class="popup-close" onclick="hidePopup('about')">×</span>
-    <h2>About me</h2>
-    <p>Hey there! I'm Andrea, and I'm so happy you're here!</p>
-  </div>
-
-  <div id="payment" class="popup">
-    <span class="popup-close" onclick="hidePopup('payment')">×</span>
-    <h2>Payment Options</h2>
-    <p>Right now we have PayPal and Wise. Scan the QR code to make a payment:</p>
-  </div>
-
-<!-- Background Music -->
-<audio id="background-music" controls="" autoplay="" loop="" src="audio/garden-vibes-lofi-160144.mp3">
-  <source src="" type="audio/mpeg"> <!-- The src will be set by JavaScript -->
-  Your browser does not support the audio element.
-</audio>
-
-
-<!-- Bootstrap JS Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
+  <script>
     function showPopup(id) {
       document.getElementById(id).style.display = 'block';
     }
+
     function hidePopup(id) {
       document.getElementById(id).style.display = 'none';
     }
-    window.showPopup = showPopup;
-    window.hidePopup = hidePopup;
-  });
 
+    // Allow user to close popup when clicking outside of the popup
+    window.onclick = function(event) {
+      const popups = document.querySelectorAll('.popup');
+      popups.forEach(function(popup) {
+        if (event.target == popup) {
+          popup.style.display = 'none';
+        }
+      });
+    };
+  </script>
 
-    // Auto-play music and select random track
-    const audioFiles = [
-      'audio/lofi-chill-140858.mp3',
-      'audio/lofi-study-112191.mp3',
-      'audio/garden-vibes-lofi-160144.mp3'
-    ];
-
-    const randomTrack = audioFiles[Math.floor(Math.random() * audioFiles.length)];
-    const audioElement = document.getElementById('background-music');
-    audioElement.src = randomTrack;
-    audioElement.play().catch(() => {
-      console.log("Autoplay is blocked. Music will start on user interaction.");
-    });
-
-    // Update volume
-    audioElement.volume = 0.5;
-
-
-</script>
-
-
-
-</body></html>
+</body>
+</html>
